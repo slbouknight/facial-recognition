@@ -2,7 +2,7 @@
 """
 Created on Wed Jun  7 17:40:24 2023
 
-@author: lvcie
+@author: slbouknight
 """
 
 # Import required libraries
@@ -51,8 +51,8 @@ while True:
         bottom_pos *= scale_factor
         left_pos *= scale_factor
         
-        print(
-            f'Found face {index + 1} at location Top: {top_pos}, Left: {left_pos}, Bottom: {bottom_pos}, Right: {right_pos}')
+        #print(
+            #f'Found face {index + 1} at location Top: {top_pos}, Left: {left_pos}, Bottom: {bottom_pos}, Right: {right_pos}')
         
         # Now we'll slice our image array to isolate the faces
         current_face_image = current_frame[top_pos: bottom_pos, left_pos:right_pos]
