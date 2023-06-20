@@ -1,5 +1,5 @@
 # facial-recognition
-A series of programs coded in Python using OpenCV, Tensorflow backend, and open source neural networks to complete tasks including facial location, expression classification, and real-time facial recognition.
+A series of programs coded in Python using OpenCV, Tensorflow backend, and open source neural networks to complete tasks including facial location, expression classification, age/gender estimation, and real-time facial recognition.
 
 ## Major Libraries & Dependencies
    - Python 3.10 or later
@@ -27,4 +27,16 @@ This project utilizes pre-trained neural network models for expression, age, and
     - Created and trained by Gil Levi and Tal Hassner using the Adience datset https://talhassner.github.io/home/projects/Adience/Adience-data.html
     - The trained model files can be downloaded from https://talhassner.github.io/home/publication/2015_CVPR
 
- ## Demonstration
+ ## Project Functionality
+ The main functionalities of the project include facial location, expression classification, age/gender estimation, and facial mapping (landmarks). All of which can be performed on images, videos, or real-time via webcam. All image/video data can be edited by adding to the images file then adjusting the specific pathway. Here are a few screenshots demonstrating these functionalities on images:
+### Facial Recognition
+<img src="https://github.com/slbouknight/facial-recognition/blob/main/images/demo/facial-recognition.png" width="400" height="300" />
+
+### Expression Classification
+<img src="https://github.com/slbouknight/facial-recognition/blob/main/images/demo/expression.png" width="400" height="300" />
+
+### Age/Gender Estimation
+<img src="https://github.com/slbouknight/facial-recognition/blob/main/images/demo/age-gender.png" width="400" height="300" />
+
+### Facial Mapping
+<img src="https://github.com/slbouknight/facial-recognition/blob/main/images/demo/landmark.png" width="400" height="300" />
