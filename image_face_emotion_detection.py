@@ -13,7 +13,7 @@ from keras.models import model_from_json
 import face_recognition
 
 # Image we want to detect
-image_to_detect = cv2.imread('images/testing/trump-modi.jpg')
+image_to_detect = cv2.imread('images/testing/expressions.jpg')
 
 # Initialize facial expression recognition model
 face_exp_model = model_from_json(open('dataset/facial_expression_model_structure.json', 'r').read())
@@ -72,7 +72,7 @@ for index, current_face_location in enumerate(all_face_locations):
     
     # Display label as text over image
     font = cv2.FONT_HERSHEY_DUPLEX
-    cv2.putText(image_to_detect, emotion_label, (left_pos, bottom_pos), font, 0.5, (255, 255, 255), 1)
+    cv2.putText(image_to_detect, emotion_label, (left_pos, bottom_pos + 20), font, 0.5, (255, 255, 255), 1)
     
     
 # Show current face with rectangle

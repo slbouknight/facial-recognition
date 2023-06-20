@@ -10,16 +10,16 @@ import cv2
 import face_recognition
 
 # Image we want to detect
-original_image = cv2.imread('images/testing/trump-modi-unknown.jpg')
+original_image = cv2.imread('images/testing/bey-jay.jpg')
 
 # Load samples and retrieve 128 face encodings for each
-face_1 = face_recognition.load_image_file('images/samples/modi.jpg')
+face_1 = face_recognition.load_image_file('images/samples/bey.jpg')
 face_1_encodings = face_recognition.face_encodings(face_1)[0]
-face_1_name = 'Narendra Modi'
+face_1_name = 'Beyonce'
 
-face_2 = face_recognition.load_image_file('images/samples/trump.jpg')
+face_2 = face_recognition.load_image_file('images/samples/jay.jpg')
 face_2_encodings = face_recognition.face_encodings(face_2)[0]
-face_2_name = 'Donald Trump'
+face_2_name = 'Jay-Z'
 
 # Save encodings and corresponding labels to separate arrays in same order
 known_face_encodings = [face_1_encodings, face_2_encodings]
@@ -27,7 +27,7 @@ known_face_names = [face_1_name, face_2_name]
 
 # Now lets load an unknown image to test against
 image_to_recognize = face_recognition.load_image_file(
-    'images/testing/trump-modi-unknown.jpg')
+    'images/testing/bey-jay.jpg')
 
 # Find all the faces/encodings in our test image
 all_face_locations = face_recognition.face_locations(

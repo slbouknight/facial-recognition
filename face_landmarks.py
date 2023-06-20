@@ -9,7 +9,7 @@ import face_recognition
 from PIL import Image, ImageDraw
 
 # Load image into numpy array
-face_image = face_recognition.load_image_file('images/samples/abhi.jpg')
+face_image = face_recognition.load_image_file('images/samples/rihanna.jpg')
 
 # Obtain list of face landmarks
 face_landmarks_list = face_recognition.face_landmarks(face_image)
@@ -24,15 +24,15 @@ for face_landmarks in face_landmarks_list:
     d = ImageDraw.Draw(pil_image)
     
     # Connect each face landmark point using a white line
-    d.line(face_landmarks['chin'], fill=(255, 255, 255), width=2)
-    d.line(face_landmarks['left_eyebrow'], fill=(255, 255, 255), width=2)
-    d.line(face_landmarks['right_eyebrow'], fill=(255, 255, 255), width=2)
-    d.line(face_landmarks['nose_bridge'], fill=(255, 255, 255), width=2)
-    d.line(face_landmarks['nose_tip'], fill=(255, 255, 255), width=2)
-    d.line(face_landmarks['left_eye'], fill=(255, 255, 255), width=2)
-    d.line(face_landmarks['right_eye'], fill=(255, 255, 255), width=2)
-    d.line(face_landmarks['top_lip'], fill=(255, 255, 255), width=2)
-    d.line(face_landmarks['bottom_lip'], fill=(255, 255, 255), width=2)
+    d.line(face_landmarks['chin'], fill=(0, 255, 0), width=2)
+    d.line(face_landmarks['left_eyebrow'], fill=(0, 255, 0), width=2)
+    d.line(face_landmarks['right_eyebrow'], fill=(0, 255, 0), width=2)
+    d.line(face_landmarks['nose_bridge'], fill=(0, 255, 0), width=2)
+    d.line(face_landmarks['nose_tip'], fill=(0, 255, 0), width=2)
+    d.line(face_landmarks['left_eye'], fill=(0, 255, 0), width=2)
+    d.line(face_landmarks['right_eye'], fill=(0, 255, 0), width=2)
+    d.line(face_landmarks['top_lip'], fill=(0, 255, 0), width=2)
+    d.line(face_landmarks['bottom_lip'], fill=(0, 255, 0), width=2)
 
 # Show final image
 pil_image.show()

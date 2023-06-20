@@ -10,7 +10,7 @@ import cv2
 import face_recognition
 
 # Image we want to detect
-image_to_detect = cv2.imread('images/testing/trump-modi.jpg')
+image_to_detect = cv2.imread('images/testing/family.jpg')
 
 # Detect all faces present in image
 all_face_locations = face_recognition.face_locations(
