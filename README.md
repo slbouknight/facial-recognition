@@ -28,7 +28,7 @@ This project utilizes pre-trained neural network models for expression, age, and
     - The trained model files can be downloaded from https://talhassner.github.io/home/publication/2015_CVPR
 
  ## Project Functionality
- The main functionalities of the project include facial location, expression classification, age/gender estimation, and facial mapping (landmarks). All of which can be performed on images, videos, or real-time via webcam. All image/video data can be edited by adding to the images file then adjusting the specific pathway. Here are a few screenshots demonstrating these functionalities on images:
+ The main functionalities of the project include facial location, expression classification, age/gender estimation, and facial mapping (landmarks). All of which can be performed on images, videos, or real-time via webcam. All image/video data can be edited by adding to the images folder then adjusting the specific pathway. Here are a few screenshots demonstrating these functionalities on images:
 ### Facial Recognition
 <img src="https://github.com/slbouknight/facial-recognition/blob/main/images/demo/facial-recognition.png" width="400" height="300" />
 
