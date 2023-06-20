@@ -13,7 +13,7 @@ A series of programs coded in Python using OpenCV, Tensorflow backend, and open 
      
 ## How to Use this Project
 1. Clone this repository
-2. Install all of the major libraries and dependecies
+2. Install all of the major libraries and dependencies
 3. Run desired file(s) in an IDE
 
 ## Neural Networks 
