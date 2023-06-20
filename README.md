@@ -10,6 +10,11 @@ A series of programs coded in Python using OpenCV, Tensorflow backend, and open 
    - OpenCV
    - face-recognition https://pypi.org/project/face-recognition/
    - dlib (install from .whl file found in env folder)
+     
+## How to Use this Project
+1. Clone this repository
+2. Install all of the major libraries and dependecies
+3. Run desired file(s) in an IDE
 
 ## Neural Networks 
 This project utilizes pre-trained neural network models for expression, age, and gender classification functionalities. All of this information can be found in the dataset folder. The sources for these models and their data is also included below:
